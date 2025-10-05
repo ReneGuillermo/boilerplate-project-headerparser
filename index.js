@@ -38,5 +38,5 @@ app.get("/api/whoami", (req, res) => {
     : req.socket.remoteAddress;
   responseObject["language"] = req.headers["accept-language"];
   responseObject["software"] = req.headers["user-agent"];
-  res.json({ responseObject });
+  res.json(responseObject);
 });
